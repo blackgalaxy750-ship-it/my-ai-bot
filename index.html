@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My AI Bot</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🤖 My AI Bot</h1>
+    <div class="container">
 
-    <div id="chat">
-        <p><b>AI:</b> Hello! How can I help you?</p>
+        <h1>🤖 My AI Bot</h1>
+
+        <div id="chat">
+            <p><b>AI:</b> Hello! How can I help you?</p>
+        </div>
+
+        <input
+            type="text"
+            id="message"
+            placeholder="Type your message..."
+        >
+
+        <button onclick="sendMessage()">Send</button>
+
     </div>
-
-    <input type="text" id="message" placeholder="Type your message...">
-
-    <button onclick="sendMessage()">Send</button>
 
     <script src="script.js"></script>
 
